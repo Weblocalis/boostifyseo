@@ -7,6 +7,8 @@
 }
 
 
+
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -184,11 +186,11 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     background:
-        url(../img/bg-dot.png),
-        url(../img/bg-dot.png),
-        url(../img/bg-round.png),
-        url(../img/bg-tree.png),
-        url(../img/bg-bottom-hero.png);
+        url(img/backgrounds/bg-dot.png),
+        url(img/backgrounds/bg-dot.png),
+        url(img/backgrounds/bg-round.png),
+        url(img/backgrounds/bg-tree.png),
+        url(img/backgrounds/bg-bottom-hero.png);
     background-position:
         10px 10px,
         bottom 190px right 10px,
@@ -269,13 +271,13 @@ h6,
     align-items: center;
     justify-content: center;
     color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    background: url(img/icons/icon-shape-primary.png) center center no-repeat;
     transition: .5s;
 }
 
 .service-item:hover .service-icon {
     color: var(--primary);
-    background: url(../img/icon-shape-white.png);
+    background: url(img/icons/icon-shape-white.png);
 }
 
 .service-item h5,
@@ -323,8 +325,8 @@ h6,
 .newsletter,
 .testimonial {
     background:
-        url(../img/bg-top.png),
-        url(../img/bg-bottom.png);
+        url(img/backgrounds/bg-top.png),
+        url(img/backgrounds/bg-bottom.png);
     background-position:
         left top,
         right bottom;
@@ -359,6 +361,7 @@ h6,
     position: relative;
     transition: .5s;
     z-index: 1;
+    overflow: hidden; /* Empêche le débordement interne */
 }
 
 .team-item::after {
@@ -428,7 +431,9 @@ h6,
     transition: .5s;
     z-index: 1;
     opacity: 0;
+    box-sizing: border-box; /* Assure que le padding ne dépasse pas */
 }
+
 
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
@@ -443,7 +448,7 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/icon-shape-white.png) center center no-repeat;
+    background: url(img/icons/icon-shape-white.png) center center no-repeat;
     border: none;
     transition: .5s;
     opacity: 0;
@@ -456,9 +461,11 @@ h6,
 }
 
 
+
+
 /*** Footer ***/
 .footer {
-    background: url(../img/footer.png) center center no-repeat;
+    background: url(img/general/footer.png) center center no-repeat;
     background-size: contain;
 }
 
@@ -522,4 +529,15 @@ h6,
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+
+.container,
+.row {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
 }
