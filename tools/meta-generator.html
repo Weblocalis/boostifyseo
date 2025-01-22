@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Balises META</title>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/files/style.css" rel="stylesheet">
+   
+
+   
+</head>
+<body>
+  
+  
+  <!-- Header -->
+    <header>
+             <!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+  <a href="#" class="navbar-brand p-0">
+    <h1 class="m-0"><i class="bi bi-search me-2"></i>Boostify<span class="fs-5">SEO</span></h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <span class="bi bi-list"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <!-- Navbar Links -->
+    <div class="navbar-nav ms-auto py-0">
+      <a href="index.html" class="nav-item nav-link active">Accueil</a>
+      <a href="tools.html" class="nav-item nav-link">Outils SEO</a>
+      <a href="features.html" class="nav-item nav-link">Fonctionnalités</a>
+      <a href="pricing.html" class="nav-item nav-link">Prix</a>
+      <!-- Dropdown Menu -->
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Ressources</a>
+        <div class="dropdown-menu m-0">
+          <a href="blog.html" class="dropdown-item">Blog</a>
+          <a href="testimonial.html" class="dropdown-item">Témoignages</a>
+          <a href="faq.html" class="dropdown-item">FAQ</a>
+        </div>
+      </div>
+      <a href="contact.html" class="nav-item nav-link">Contact</a>
+    </div>
+    <!-- Search Button -->
+    <button type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+      <i class="bi bi-search"></i>
+    </button>
+    <!-- Call to Action Button -->
+    <a href="tools.html" class="btn btn-primary text-light rounded-pill py-2 px-4 ms-3">Accéder aux Outils</a>
+  </div>
+</nav>
+<!-- End Navbar -->   
+     
+    </header>
+  
+  
+    <div class="container">
+        <h1 class="mb-4 text-center">Générateur de Balises META</h1>
+        
+        
+<div class="row"><h3>Informations Essentielles</h3>
+<form id="essentialMetaForm">
+    <!-- Titre de la page -->
+    <div class="mb-3">
+        <label for="metaTitle" class="form-label">Titre de la page</label>
+        <input type="text" id="metaTitle" name="metaTitle" class="form-control" placeholder="Titre optimisé pour Google" maxlength="60" required>
+        <small id="metaTitleCounter" class="text-muted">60 caractères restants</small>
+    </div>
+
+    <!-- Description de la page -->
+    <div class="mb-3">
+        <label for="metaDescription" class="form-label">Description de la page</label>
+        <textarea id="metaDescription" name="metaDescription" class="form-control" rows="3" placeholder="Brève description de votre page" maxlength="160" required></textarea>
+        <small id="metaDescriptionCounter" class="text-muted">160 caractères restants</small>
+    </div>
+
+    
+
+    <!-- URL Canonique -->
+    <div class="mb-3">
+        <label for="metaCanonical" class="form-label">URL Canonique</label>
+        <input type="url" id="metaCanonical" name="metaCanonical" class="form-control" placeholder="https://example.com">
+        <small class="text-muted">Lien canonique de la page pour éviter le contenu dupliqué.</small>
+    </div>
+    
+    
+     <!-- Prévisualisation SERP -->
+<div id="serpPreview" class="border rounded p-3 bg-light mt-4">
+    <h4 class="mb-3">Prévisualisation SERP</h4>
+    <div class="serp-container">
+        <p class="serp-title fw-bold text-primary mb-1" style="font-size: 18px;">Titre optimisé pour Google</p>
+        <p class="serp-url text-success mb-2" style="font-size: 14px;">https://example.com</p>
+        <p class="serp-description text-secondary" style="font-size: 13px; line-height: 1.4;">
+            Brève description de votre page. Elle sera affichée dans les résultats de recherche.
+        </p>
+    </div>
+</div>
+ 
+    
+    
+    <!-- Mots-clés -->
+    <div class="mb-3">
+        <label for="metaKeywords" class="form-label">Mots-clés</label>
+        <input type="text" id="metaKeywords" name="metaKeywords" class="form-control" placeholder="Mots-clés séparés par des virgules">
+        <small class="text-muted">Exemple : SEO, optimisation, site web</small>
+    </div>
+
+
+<!-- charset -->
+<div class="mb-3">
+    <label for="charset" class="form-label">Type d'encodage</label>
+    <select id="charset" name="charset" class="form-select">
+        <option value="UTF-8" selected>UTF-8 (recommandé)</option>
+        <option value="ISO-8859-1">ISO-8859-1 (Europe de l'Ouest)</option>
+        <option value="Windows-1252">Windows-1252 (ANSI pour Windows)</option>
+        <option value="UTF-16">UTF-16 (Unicode étendu)</option>
+    </select>
+    <small class="text-muted">
+        Choisissez l'encodage de votre page. <strong>UTF-8</strong> est recommandé pour le web moderne.
+    </small>
+</div>            
+
+
+
+
+<!-- Balise Viewport -->
+<div class="mb-3">
+    <h3>Balise Viewport</h3>
+    <!-- Option 1: Inclure la balise viewport avec la configuration par défaut -->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="includeViewport" checked>
+        <label class="form-check-label" for="includeViewport">
+            Inclure <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+        </label>
+    </div>
+
+    <!-- Option 2: Personnalisation avancée (collapsible) -->
+    <div class="mt-3">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#advancedViewportOptions" aria-expanded="false" aria-controls="advancedViewportOptions">
+            Personnaliser la balise Viewport
+        </button>
+        <div class="collapse" id="advancedViewportOptions">
+            <div class="card card-body mt-2">
+                <!-- Largeur -->
+                <div class="mb-3">
+                    <label for="viewportWidth" class="form-label">Largeur (<code>width</code>)</label>
+                    <select id="viewportWidth" class="form-select">
+                        <option value="device-width" selected>device-width (par défaut)</option>
+                        <option value="1024">1024</option>
+                        <option value="custom">Personnalisé</option>
+                    </select>
+                    <input type="number" id="viewportWidthCustom" class="form-control mt-2 d-none" placeholder="Largeur personnalisée (ex : 1280)">
+                </div>
+
+                <!-- Zoom initial -->
+                <div class="mb-3">
+                    <label for="initialScale" class="form-label">Zoom initial (<code>initial-scale</code>)</label>
+                    <input type="number" id="initialScale" class="form-control" step="0.1" min="0.1" max="5.0" placeholder="1.0">
+                </div>
+
+                <!-- Zoom utilisateur -->
+                <div class="mb-3">
+                    <label class="form-label">Autoriser le zoom utilisateur (<code>user-scalable</code>)</label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="userScalable" checked>
+                        <label class="form-check-label" for="userScalable">Oui</label>
+                    </div>
+                </div>
+
+                <!-- Ajustement pour appareils avec notch -->
+                <div class="mb-3">
+                    <label for="viewportFit" class="form-label">Ajustement pour appareils avec notch (<code>viewport-fit</code>)</label>
+                    <select id="viewportFit" class="form-select">
+                        <option value="" selected>Non spécifié</option>
+                        <option value="cover">Cover</option>
+                        <option value="contain">Contain</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            
+
+
+
+
+    <!-- Langue principale -->
+    <div class="mb-3">
+        <label for="metaLanguage" class="form-label">Langue principale</label>
+        <select id="metaLanguage" name="metaLanguage" class="form-select">
+            <option value="en">Anglais (en)</option>
+            <option value="fr">Français (fr)</option>
+            <option value="es">Espagnol (es)</option>
+            <option value="de">Allemand (de)</option>
+            <option value="zh">Chinois (zh)</option>
+            <!-- Ajouter plus de langues si nécessaire -->
+        </select>
+        <small class="text-muted">Langue principale de la page, selon le code ISO 639-1.</small>
+    </div>
+    
+  
+
+</form>        
+</div><!-- end row -->
+        
+
+
+
+
+<div class="row py-3"><h3>Indexation et SEO</h3>
+<form id="seoMetaForm">
+    <!-- Balise Robots -->
+    <div class="mb-3">
+        <label for="metaRobots" class="form-label">Directives Robots</label>
+        <select id="metaRobots" name="metaRobots" class="form-select">
+            <option value="index, follow" selected>Indexer cette page et suivre les liens (index, follow)</option>
+            <option value="noindex, follow">Ne pas indexer cette page mais suivre les liens (noindex, follow)</option>
+            <option value="index, nofollow">Indexer cette page mais ne pas suivre les liens (index, nofollow)</option>
+            <option value="noindex, nofollow">Ne pas indexer cette page ni suivre les liens (noindex, nofollow)</option>
+        </select>
+        <small class="text-muted">Contrôlez la visibilité et le comportement des robots pour cette page.</small>
+    </div>
+
+  
+
+    <!-- Paramètres avancés -->
+    <h4>Paramètres avancés</h4>
+    <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" id="noarchive" name="noarchive">
+        <label class="form-check-label" for="noarchive">Empêcher l'archivage de la page (noarchive)</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" id="nosnippet" name="nosnippet">
+        <label class="form-check-label" for="nosnippet">Empêcher les extraits dans les résultats (nosnippet)</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input class="form-check-input" type="checkbox" id="noodp" name="noodp">
+        <label class="form-check-label" for="noodp">Empêcher l'utilisation des descriptions issues de répertoires (noodp)</label>
+    </div>
+</form></div><!-- end row -->
+
+
+        
+
+
+<div class="row py-3"><div class="accordion-item">
+    <h2 class="accordion-header" id="headingGeoLang">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeoLang" aria-expanded="false" aria-controls="collapseGeoLang">
+            Localisation Géographique et Langues
+        </button>
+    </h2>
+    <div id="collapseGeoLang" class="accordion-collapse collapse" aria-labelledby="headingGeoLang">
+        <div class="accordion-body">
+            <form id="geoMetaForm">
+                <!-- Position Géographique -->
+                <div class="mb-3">
+                    <label for="geoPosition" class="form-label">Position Géographique</label>
+                    <input type="text" id="geoPosition" name="geoPosition" class="form-control" placeholder="Exemple : 48.8566;2.3522">
+                    <small class="text-muted">Indiquez la latitude et la longitude séparées par un point-virgule.</small>
+                </div>
+
+                <!-- Région Géographique -->
+                <div class="mb-3">
+                    <label for="geoRegion" class="form-label">Région Géographique</label>
+                    <input type="text" id="geoRegion" name="geoRegion" class="form-control" placeholder="Exemple : FR-IDF">
+                    <small class="text-muted">Code ISO du pays et de la région (par exemple, FR-IDF pour Île-de-France).</small>
+                </div>
+
+                <!-- Langue principale -->
+                <div class="mb-3">
+                    <label for="hreflang" class="form-label">Langue principale</label>
+                    <select id="hreflang" name="hreflang" class="form-select">
+                        <option value="fr-FR">Français (France) [fr-FR]</option>
+                        <option value="en-US">Anglais (États-Unis) [en-US]</option>
+                        <option value="es-ES">Espagnol (Espagne) [es-ES]</option>
+                        <option value="de-DE">Allemand (Allemagne) [de-DE]</option>
+                        <option value="zh-CN">Chinois (Simplifié) [zh-CN]</option>
+                        <!-- Ajouter d'autres langues au besoin -->
+                    </select>
+                    <small class="text-muted">Langue principale de la page au format hreflang.</small>
+                </div>
+
+                <!-- Public Cible -->
+                <div class="mb-3">
+                    <label for="geoPlacename" class="form-label">Public Cible</label>
+                    <input type="text" id="geoPlacename" name="geoPlacename" class="form-control" placeholder="Exemple : Paris, Île-de-France">
+                    <small class="text-muted">Nom de la ville ou région cible (par exemple, Paris).</small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="row py-3"><div class="accordion-item">
+    <h2 class="accordion-header" id="headingAdvanced">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdvanced" aria-expanded="false" aria-controls="collapseAdvanced">
+            Métadonnées Avancées
+        </button>
+    </h2>
+    <div id="collapseAdvanced" class="accordion-collapse collapse" aria-labelledby="headingAdvanced">
+        <div class="accordion-body">
+            <form id="advancedMetaForm">
+                <!-- Auteur -->
+                <div class="mb-3">
+                    <label for="metaAuthor" class="form-label">Auteur</label>
+                    <input type="text" id="metaAuthor" name="metaAuthor" class="form-control" placeholder="Nom de l'auteur ou de l'entité">
+                    <small class="text-muted">Exemple : Jean Dupont, Agence WebLocalis</small>
+                </div>
+
+                <!-- Contributeur -->
+                <div class="mb-3">
+                    <label for="metaContributor" class="form-label">Contributeur(s)</label>
+                    <input type="text" id="metaContributor" name="metaContributor" class="form-control" placeholder="Nom des contributeurs séparés par des virgules">
+                    <small class="text-muted">Exemple : Alice, Bob</small>
+                </div>
+
+                <!-- Éditeur -->
+                <div class="mb-3">
+                    <label for="metaPublisher" class="form-label">Éditeur</label>
+                    <input type="text" id="metaPublisher" name="metaPublisher" class="form-control" placeholder="Nom de l'éditeur">
+                    <small class="text-muted">Exemple : WebLocalis</small>
+                </div>
+
+                <!-- Licence -->
+                <div class="mb-3">
+                    <label for="metaLicense" class="form-label">Licence</label>
+                    <select id="metaLicense" name="metaLicense" class="form-select">
+                        <option value="">Aucune</option>
+                        <option value="Creative Commons">Creative Commons</option>
+                        <option value="Copyright">Copyright</option>
+                        <option value="Open Source">Open Source</option>
+                    </select>
+                    <small class="text-muted">Sélectionnez la licence applicable à votre contenu.</small>
+                </div>
+
+                <!-- Date de publication -->
+                <div class="mb-3">
+                    <label for="metaDate" class="form-label">Date de publication ou de modification</label>
+                    <input type="date" id="metaDate" name="metaDate" class="form-control">
+                    <small class="text-muted">Spécifiez une date pour le contenu.</small>
+                </div>
+
+                <!-- Métadonnées Dublin Core -->
+                <div class="mb-3">
+                    <label for="metaDublinCore" class="form-label">Balises Dublin Core</label>
+                    <textarea id="metaDublinCore" name="metaDublinCore" class="form-control" rows="4" placeholder="Ajoutez des balises Dublin Core au besoin"></textarea>
+                    <small class="text-muted">Utilisez les formats standards comme <code>DC.title</code>, <code>DC.creator</code>, etc.</small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div></div>
+
+
+
+
+
+<div class="row py-3">
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOptimization">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOptimization" aria-expanded="false" aria-controls="collapseOptimization">
+            Optimisation pour appareils
+        </button>
+    </h2>
+    <div id="collapseOptimization" class="accordion-collapse collapse" aria-labelledby="headingOptimization">
+        <div class="accordion-body">
+            <form id="technicalMetaForm">
+                <!-- Viewport -->
+                <div class="mb-3">
+                    <label for="metaViewport" class="form-label">Viewport</label>
+                    <textarea id="metaViewport" name="metaViewport" class="form-control" rows="1" readonly>
+width=device-width, initial-scale=1.0
+                    </textarea>
+                    <small class="text-muted">Recommandé pour une expérience mobile optimale.</small>
+                </div>
+
+                <!-- Charset -->
+                <div class="mb-3">
+                    <label for="metaCharset" class="form-label">Charset</label>
+                    <input type="text" id="metaCharset" name="metaCharset" class="form-control" value="UTF-8" readonly>
+                    <small class="text-muted">Encodage des caractères utilisé par la page.</small>
+                </div>
+
+                <!-- Couleur du thème -->
+                <div class="mb-3">
+                    <label for="metaThemeColor" class="form-label">Couleur du thème</label>
+                    <input type="color" id="metaThemeColor" name="metaThemeColor" class="form-control" value="#ffffff">
+                    <small class="text-muted">Couleur de la barre d'outils sur les appareils mobiles.</small>
+                </div>
+
+                <!-- Compatibilité IE -->
+                <div class="mb-3">
+                    <label for="metaIECompatible" class="form-label">Compatibilité Internet Explorer</label>
+                    <input type="text" id="metaIECompatible" name="metaIECompatible" class="form-control" value="IE=edge" readonly>
+                    <small class="text-muted">Recommandé pour les anciens navigateurs Internet Explorer.</small>
+                </div>
+
+                <!-- Générateur -->
+                <div class="mb-3">
+                    <label for="metaGenerator" class="form-label">Générateur</label>
+                    <input type="text" id="metaGenerator" name="metaGenerator" class="form-control" placeholder="Exemple : WordPress 6.1" value="">
+                    <small class="text-muted">Indique le logiciel utilisé pour générer cette page (optionnel).</small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+
+        
+    </div><!-- end container -->
+
+
+<!-- Footer -->
+    <footer>
+        <!-- Start Footer Section -->
+<footer class="bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5 px-lg-5">
+    <div class="row g-5">
+      
+      <!-- Get In Touch Section -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-white mb-4">Contactez-nous</h5>
+        <p><i class="bi bi-geo-alt me-3"></i>12 rue de la Visibilité, Paris, France</p>
+        <p><i class="bi bi-telephone me-3"></i>+33 1 23 45 67 89</p>
+        <p><i class="bi bi-envelope me-3"></i>support@boostifyseo.com</p>
+        <div class="d-flex pt-2">
+          <a class="btn btn-outline-light btn-social me-2" href="https://twitter.com/BoostifySEO"><i class="bi bi-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="https://facebook.com/BoostifySEO"><i class="bi bi-facebook"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="https://youtube.com/BoostifySEO"><i class="bi bi-youtube"></i></a>
+          <a class="btn btn-outline-light btn-social me-2" href="https://instagram.com/BoostifySEO"><i class="bi bi-instagram"></i></a>
+          <a class="btn btn-outline-light btn-social" href="https://linkedin.com/company/BoostifySEO"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Popular Links Section -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-white mb-4">Liens Importants</h5>
+        <a class="btn btn-link" href="">Accueil</a>
+        <a class="btn btn-link" href="tools.html">Outils SEO</a>
+        <a class="btn btn-link" href="blog.html">Blog</a>
+        <a class="btn btn-link" href="privacy.html">Politique de confidentialité</a>
+        <a class="btn btn-link" href="terms.html">Conditions générales</a>
+      </div>
+      
+
+      <!-- Newsletter Section -->
+      <div class="col-md-6 col-lg-3">
+        <h5 class="text-white mb-4">Newsletter</h5>
+        <p>Inscrivez-vous pour recevoir les dernières actualités SEO, astuces et nouveaux outils directement dans votre boîte mail.</p>
+        <div class="position-relative w-100 mt-3">
+          <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Votre email" style="height: 48px;">
+          <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+            <i class="bi bi-send text-primary fs-4"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom Section -->
+  <div class="container px-lg-5">
+    <div class="copyright">
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom" href="#">BoostifySEO</a>, Tous droits réservés.
+          <br>Conçu par <a class="border-bottom" href="/">BoostifySEO</a>
+        </div>
+        <!-- Right Section -->
+        <div class="col-md-6 text-center text-md-end">
+          <div class="footer-menu">
+            <a href="/">Accueil</a>
+            <a href="privacy.html">Cookies</a>
+            <a href="help.html">Aide</a>
+            <a href="faq.html">FAQs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer Section -->
+    </footer>
+
+<!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/files/main.js" defer></script>
+
+</body>
+</html>

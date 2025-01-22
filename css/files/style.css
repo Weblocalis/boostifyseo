@@ -6,7 +6,9 @@
     --dark: #1D1D27;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 /*** Spinner ***/
