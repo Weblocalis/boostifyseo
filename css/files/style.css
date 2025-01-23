@@ -11,20 +11,6 @@ html {
 }
 
 
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -237,7 +223,6 @@ h6,
 .section-title h6::before,
 .section-title h6::after {
     position: absolute;
-    content: "";
     width: 10px;
     height: 10px;
     top: 2px;
@@ -496,11 +481,11 @@ h6,
     color: var(--light);
     font-weight: normal;
     transition: .3s;
+    text-decoration: none;
 }
 
 .footer .btn.btn-link::before {
     position: relative;
-    content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
@@ -541,5 +526,5 @@ h6,
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
+    
 }
