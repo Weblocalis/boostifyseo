@@ -107,3 +107,11 @@
     
 })(jQuery);
 
+// Révéler le texte associé lors d'un clic
+$('#tool-filters li').on('click', function () {
+    // Réinitialiser tous les textes (masquer les autres)
+    $('#tool-filters li .tool-text').addClass('d-none');
+    
+    // Ajouter une classe pour rendre le texte visible pour l'élément cliqué
+    $(this).find('.tool-text').toggleClass('d-none');
+});

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /data/
+Allow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+Allow: /img/
+
+# Sitemaps
+Sitemap: https://boostifyseo.com/sitemap.xml

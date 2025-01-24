@@ -34,8 +34,11 @@
 </head>
 
 <body class="bg-light">
+
   <!-- Header -->
   <header>
+    <!-- Development Notice -->
+
     <!-- Start Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
       <a href="#" class="navbar-brand p-0">
@@ -69,11 +72,15 @@
         <!-- Call to Action Button -->
         <a href="tools.html" class="btn btn-primary text-light rounded-pill py-2 px-4 ms-3">Accéder aux Outils</a>
       </div>
+      
     </nav>
     <!-- End Navbar -->
     <!-- Start Hero Section -->
     <section class="hero-header container-fluid py-5 bg-primary mb-5">
       <div class="container my-5 px-lg-5">
+        <div class="alert alert-warning text-center mb-0" role="alert">
+          Ce site est actuellement en cours de développement. Certaines fonctionnalités peuvent ne pas être disponibles.
+        </div>
         <div class="row g-5 py-5">
           <!-- Hero Text -->
           <div class="col-lg-6 text-center text-lg-start">
@@ -104,47 +111,7 @@
 
   <!-- Main Content -->
   <main class="container-xxl">
-    <!-- Start Advantages Section -->
-    <section class="advantages py-5 bg-light">
-      <div class="px-lg-5">
-        <!-- Section Title -->
-        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="text-primary ps-4">Pourquoi BoostifySEO ?</h6>
-          <h2 class="mt-2">Les avantages qui nous différencient</h2>
-        </div>
-
-        <!-- Advantages Content -->
-        <div class="row g-4">
-          <!-- Key Advantage 1 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
-              <i class="bi bi-laptop fs-1 text-primary mb-3"></i>
-              <h5 class="fw-bold">Interface Intuitive</h5>
-              <p class="mb-0">Naviguez facilement grâce à une interface pensée pour tous, même les débutants.</p>
-            </div>
-          </div>
-
-          <!-- Key Advantage 2 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
-              <i class="bi bi-speedometer2 fs-1 text-primary mb-3"></i>
-              <h5 class="fw-bold">Analyse Rapide</h5>
-              <p class="mb-0">Obtenez des résultats précis et détaillés en quelques secondes seulement.</p>
-            </div>
-          </div>
-
-          <!-- Key Advantage 3 -->
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
-              <i class="bi bi-cash-coin fs-1 text-primary mb-3"></i>
-              <h5 class="fw-bold">Outils Gratuits</h5>
-              <p class="mb-0">Profitez d'une suite complète d'outils SEO gratuits pour démarrer sans frais.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Advantages Section --><!-- Start Tools Section -->
+    <!-- Start Tools Section -->
     <section class="tools py-5 px-lg-5">
       <!-- Section Title -->
       <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
@@ -157,9 +124,38 @@
         <div class="col-12 text-center">
           <ul class="list-inline mb-5" id="tool-filters">
             <li class="btn px-3 pe-4 active" data-filter="*">Tous</li>
-            <li class="btn px-3 pe-4" data-filter=".analysis">Analyse de site</li>
-            <li class="btn px-3 pe-4" data-filter=".optimization">Optimisation technique</li>
-            <li class="btn px-3 pe-4" data-filter=".content">Outils de contenu</li>
+            <li class="btn px-3 pe-4" data-filter=".analysis">
+              <i class="bi bi-graph-up"></i> <span class="tool-text d-none">Analyse et optimisation technique</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".optimization">
+              <i class="bi bi-key"></i> <span class="tool-text d-none">Recherche et gestion des mots-clés</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".competitor-analysis">
+              <i class="bi bi-people"></i> <span class="tool-text d-none">Analyse concurrentielle</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".content">
+              <i class="bi bi-pencil-square"></i> <span class="tool-text d-none">Création et optimisation de
+                contenu</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".structured-data">
+              <i class="bi bi-code-slash"></i> <span class="tool-text d-none">Données structurées et balisage</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".performance">
+              <i class="bi bi-lightning-charge"></i> <span class="tool-text d-none">Amélioration de la
+                performance</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".local-seo">
+              <i class="bi bi-geo-alt"></i> <span class="tool-text d-none">Outils pour le SEO local</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".automation">
+              <i class="bi bi-gear"></i> <span class="tool-text d-none">Automatisation et rapports</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".accessibility">
+              <i class="bi bi-universal-access"></i> <span class="tool-text d-none">Accessibilité et conformité</span>
+            </li>
+            <li class="btn px-3 pe-4" data-filter=".monitoring">
+              <i class="bi bi-shield-check"></i> <span class="tool-text d-none">Surveillance et maintenance</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -169,102 +165,551 @@
 
 
 
-        <div class="col-lg-4 col-md-6 tool-item analysis wow zoomIn" data-wow-delay="0.1s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-1.jpg" alt="Audit SEO" loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-1.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Analysis</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Audit SEO</a>
-              </div>
-            </div>
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Audit SEO complet
+            </h5>
+            <p class="mb-0">
+              Effectuez un audit complet de votre site pour identifier les problèmes techniques et les opportunités
+              d&#39;amélioration.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 tool-item optimization wow zoomIn" data-wow-delay="0.3s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-2.jpg" alt="Générateur de Sitemap" loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-2.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Optimization</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Générateur de Sitemap</a>
-              </div>
-            </div>
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de fichier robots.txt
+            </h5>
+            <p class="mb-0">
+              Générez un fichier robots.txt pour contrôler l&#39;accès des moteurs de recherche à votre site.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 tool-item content wow zoomIn" data-wow-delay="0.6s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-3.jpg" alt="Analyseur de contenu" loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-3.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Content</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Analyseur de contenu</a>
-              </div>
-            </div>
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de sitemap.xml
+            </h5>
+            <p class="mb-0">
+              Créez un sitemap.xml pour aider les moteurs de recherche à indexer votre site plus efficacement.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 tool-item analysis wow zoomIn" data-wow-delay="0.1s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-4.jpg" alt="Analyse de backlinks" loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-4.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Analysis</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Analyse de backlinks</a>
-              </div>
-            </div>
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur d&#39;erreurs 404/redirections
+            </h5>
+            <p class="mb-0">
+              Vérifiez les erreurs 404 et les redirections pour améliorer l&#39;expérience utilisateur.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 tool-item optimization wow zoomIn" data-wow-delay="0.3s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-5.jpg" alt="Compresseur d&#39;images"
-              loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-5.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Optimization</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Compresseur d&#39;images</a>
-              </div>
-            </div>
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur de vitesse de site
+            </h5>
+            <p class="mb-0">
+              Analysez la vitesse de votre site et obtenez des recommandations pour l&#39;améliorer.
+            </p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 tool-item content wow zoomIn" data-wow-delay="0.6s">
-          <div class="position-relative rounded overflow-hidden">
-            <img class="img-fluid w-100" src="img/portfolio/portfolio-6.jpg" alt="Générateur de meta-tags"
-              loading="lazy">
-            <div class="portfolio-overlay">
-              <a class="btn btn-light" href="img/portfolio/portfolio-6.jpg" data-lightbox="tools">
-                <i class="bi bi-plus-lg text-primary fs-2"></i>
-              </a>
-              <div class="mt-auto">
-                <small class="text-white"><i class="bi bi-tools me-2"></i>Content</small>
-                <a class="h5 d-block text-white mt-1 mb-0" href="#">Générateur de meta-tags</a>
-              </div>
-            </div>
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Analyseur de HTTPS
+            </h5>
+            <p class="mb-0">
+              Vérifiez la sécurité HTTPS de votre site pour protéger les données des utilisateurs.
+            </p>
           </div>
         </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de balises meta
+            </h5>
+            <p class="mb-0">
+              Générez des balises meta pour améliorer le référencement de vos pages.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 analysis wow fadeInUp" data-wow-delay="0.1s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Minificateur de fichiers
+            </h5>
+            <p class="mb-0">
+              Minifiez vos fichiers CSS et JavaScript pour réduire le temps de chargement de votre site.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 optimization wow fadeInUp" data-wow-delay="0.3s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Planificateur de mots-clés avec volume de recherche
+            </h5>
+            <p class="mb-0">
+              Planifiez vos mots-clés avec des données de volume de recherche pour optimiser votre contenu.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 optimization wow fadeInUp" data-wow-delay="0.3s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de clusters de mots-clés
+            </h5>
+            <p class="mb-0">
+              Générez des clusters de mots-clés pour structurer votre contenu de manière efficace.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 optimization wow fadeInUp" data-wow-delay="0.3s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Suivi de positionnement des mots-clés
+            </h5>
+            <p class="mb-0">
+              Suivez le positionnement de vos mots-clés pour évaluer l&#39;efficacité de votre stratégie SEO.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 optimization wow fadeInUp" data-wow-delay="0.3s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Suggestions de mots-clés longue traîne
+            </h5>
+            <p class="mb-0">
+              Obtenez des suggestions de mots-clés longue traîne pour cibler des niches spécifiques.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 competitor-analysis wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Outil d’analyse de backlinks concurrents
+            </h5>
+            <p class="mb-0">
+              Analysez les backlinks de vos concurrents pour découvrir des opportunités de liens.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 competitor-analysis wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Comparateur de performance entre sites
+            </h5>
+            <p class="mb-0">
+              Comparez la performance de votre site avec celle de vos concurrents.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 competitor-analysis wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Analyse des mots-clés concurrents
+            </h5>
+            <p class="mb-0">
+              Identifiez les mots-clés utilisés par vos concurrents pour améliorer votre stratégie.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 content wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur de densité de mots-clés
+            </h5>
+            <p class="mb-0">
+              Vérifiez la densité de mots-clés dans votre contenu pour éviter le bourrage de mots-clés.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 content wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Analyseur de contenu dupliqué
+            </h5>
+            <p class="mb-0">
+              Détectez et corrigez le contenu dupliqué sur votre site.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 content wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Optimiseur de texte pour le SEO
+            </h5>
+            <p class="mb-0">
+              Optimisez votre texte pour le SEO en suivant les meilleures pratiques.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 content wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de FAQ SEO
+            </h5>
+            <p class="mb-0">
+              Créez des FAQ optimisées pour le SEO pour répondre aux questions courantes.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 content wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de contenus structurés
+            </h5>
+            <p class="mb-0">
+              Générez des contenus structurés pour améliorer la lisibilité et le SEO.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 structured-data wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de balises Schema.org
+            </h5>
+            <p class="mb-0">
+              Créez des balises Schema.org pour améliorer la compréhension de votre contenu par les moteurs de
+              recherche.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 structured-data wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Validateur de données structurées
+            </h5>
+            <p class="mb-0">
+              Validez vos données structurées pour garantir leur conformité.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 structured-data wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de microdonnées JSON-LD
+            </h5>
+            <p class="mb-0">
+              Générez des microdonnées JSON-LD pour structurer vos données de manière efficace.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 performance wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Compresseur d’images
+            </h5>
+            <p class="mb-0">
+              Compressez vos images pour réduire le temps de chargement de votre site.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 performance wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de Lazy Loading pour les images et vidéos.
+            </h5>
+            <p class="mb-0">
+              Implémentez le Lazy Loading pour les images et vidéos afin d&#39;améliorer la performance.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 performance wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Optimiseur des polices et scripts inutilisés.
+            </h5>
+            <p class="mb-0">
+              Optimisez les polices et scripts inutilisés pour accélérer le chargement de votre site.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 performance wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Testeur de performance mobile (mobile-friendly)
+            </h5>
+            <p class="mb-0">
+              Testez la performance mobile de votre site pour garantir une expérience utilisateur optimale.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 local-seo wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de fiches Google My Business.
+            </h5>
+            <p class="mb-0">
+              Créez des fiches Google My Business pour améliorer votre visibilité locale.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 local-seo wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur de cohérence des citations locales
+            </h5>
+            <p class="mb-0">
+              Vérifiez la cohérence des citations locales pour renforcer votre SEO local.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 local-seo wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Suivi de positionnement local
+            </h5>
+            <p class="mb-0">
+              Suivez le positionnement de votre site dans les résultats de recherche locaux.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 automation wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de rapports SEO
+            </h5>
+            <p class="mb-0">
+              Générez des rapports SEO détaillés pour suivre vos performances.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 accessibility wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur WCAG
+            </h5>
+            <p class="mb-0">
+              Vérifiez la conformité de votre site avec les normes WCAG pour l&#39;accessibilité.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 accessibility wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Analyseur des descriptions d’images manquantes
+            </h5>
+            <p class="mb-0">
+              Analysez les descriptions d&#39;images manquantes pour améliorer l&#39;accessibilité.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 accessibility wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Générateur de liens internes suggérés
+            </h5>
+            <p class="mb-0">
+              Générez des liens internes suggérés pour améliorer la navigation sur votre site.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 monitoring wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Analyseur de logs
+            </h5>
+            <p class="mb-0">
+              Analysez les logs de votre site pour détecter les problèmes de performance.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-lg-4 col-md-6 monitoring wow fadeInUp" data-wow-delay="0.6s">
+          <div class="advantage-item bg-white text-center p-4 shadow-sm rounded">
+
+            <h5 class="fw-bold">
+              Vérificateur de liens cassés
+            </h5>
+            <p class="mb-0">
+              Vérifiez les liens cassés sur votre site pour améliorer l&#39;expérience utilisateur.
+            </p>
+          </div>
+        </div>
+
+
 
       </div>
     </section>
-    <!-- End Tools Section -->
-    <!-- Start Reusable Section: About Us -->
+    <!-- End Tools Section --><!-- Start Reusable Section: About Us -->
     <section class="about-us py-5">
       <div class="row g-5">
         <!-- Text Content Section -->
